@@ -4,5 +4,5 @@ SID INT,
 Name VARCHAR(50),
 Age INT,
 Address VARCHAR(150),
-TELEPHONE INT
+Telephone INT
 )
