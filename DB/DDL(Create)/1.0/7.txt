@@ -1,0 +1,9 @@
+CREATE Lecturer
+(
+LecturerID int IDENTITY(1,1) PRIMARY KEY,
+LecturerName VARCHAR(150),
+NIC VARCHAR(50),
+Address VARCHAR(100),
+Email VARCHAR(100)
+)
+

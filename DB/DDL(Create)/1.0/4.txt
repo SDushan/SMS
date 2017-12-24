@@ -1,0 +1,8 @@
+CREATE Class
+(
+ClassID int IDENTITY(1,1) PRIMARY KEY,
+ClassName VARCHAR(50),
+GradeID INT,
+Class_Teacher VARCHAR(150),
+)
+

@@ -1,0 +1,8 @@
+CREATE TABLE Subject
+(
+SubjectID int IDENTITY(1,1) PRIMARY KEY,
+Semester VARCHAR(50),
+SubjectName VARCHAR(20),
+Subject_Incharge INT
+)
+

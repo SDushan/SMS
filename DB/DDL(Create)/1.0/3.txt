@@ -1,0 +1,8 @@
+CREATE TABLE Grade
+(
+GradeID int IDENTITY(1,1) PRIMARY KEY,
+GradeName VARCHAR(50),
+Section_Head INT,
+No_Of_Classes INT
+)
+

@@ -1,8 +1,10 @@
 CREATE TABLE STUDENT
 (
-SID INT,
+SID int IDENTITY(1,1) PRIMARY KEY,
 Name VARCHAR(50),
 Age INT,
 Address VARCHAR(150),
-Telephone INT
+Telephone INT,
+ClassID INT
 )
+
