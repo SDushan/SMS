@@ -1,4 +1,4 @@
-CREATE Class
+CREATE TABLE Class
 (
 ClassID int IDENTITY(1,1) PRIMARY KEY,
 ClassName VARCHAR(50),

@@ -1,4 +1,4 @@
-CREATE Lecturer
+CREATE TABLE Lecturer
 (
 LecturerID int IDENTITY(1,1) PRIMARY KEY,
 LecturerName VARCHAR(150),
