@@ -34,11 +34,11 @@
                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 
                     <ul class="nav nav-pills flex-column sidebar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="index.html"><em class="fa fa-dashboard"></em> Dashboard <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="widgets.html"><em class="fa fa-calendar-o"></em> Widgets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="charts.html"><em class="fa fa-bar-chart"></em> Charts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="elements.html"><em class="fa fa-hand-o-up"></em> UI Elements</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cards.html"><em class="fa fa-clone"></em> Cards</a></li>
+                        <li class="nav-item"><a class="nav-link active" href=@Url.Content("/Content/index.html")><em class="fa fa-dashboard"></em> Dashboard <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href=@Url.Content("/Content/widgets.html")><em class="fa fa-calendar-o"></em> Widgets</a></li>
+                        <li class="nav-item"><a class="nav-link" href=@Url.Content("/Content/charts.html")><em class="fa fa-bar-chart"></em> Charts</a></li>
+                        <li class="nav-item"><a class="nav-link" href=@Url.Content("/Content/elements.html")><em class="fa fa-hand-o-up"></em> UI Elements</a></li>
+                        <li class="nav-item"><a class="nav-link" href=@Url.Content("/Content/cards.html")><em class="fa fa-clone"></em> Cards</a></li>
                     </ul>
 
                     <a href="#" class="logout-button"><em class="fa fa-power-off"></em> Signout</a>
@@ -55,12 +55,12 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="dist/js/bootstrap.min.js"></script>
 
-        <script src="js/chart.min.js"></script>
-        <script src="js/chart-data.js"></script>
-        <script src="js/easypiechart.js"></script>
-        <script src="js/easypiechart-data.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/custom.js"></script>
+        <script src=@Url.Content("/Content/js/chart.min.js")></script>
+        <script src=@Url.Content("/Content/js/chart-data.js")></script>
+        <script src=@Url.Content("/Content/js/easypiechart.js")></script>
+        <script src=@Url.Content("/Content/js/easypiechart-data.js")></script>
+        <script src=@Url.Content("/Content/js/bootstrap-datepicker.js")></script>
+        <script src=@Url.Content("/Content/js/custom.js")></script>
         <script>
 	    window.onload = function () {
 	var chart1 = document.getElementById("line-chart").getContext("2d");
