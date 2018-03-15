@@ -208,10 +208,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AddNewUser.html" />
     <Content Include="Content\cards.html" />
     <Content Include="Content\charts.html" />
     <Content Include="Content\elements.html" />
     <Content Include="Content\index.html" />
+    <Content Include="Content\js\AddNewUser.js" />
     <Content Include="Content\widgets.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -271,7 +273,6 @@
     <Folder Include="Content\dist\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Content\js\" />
     <Folder Include="Content\sass\" />
   </ItemGroup>
   <ItemGroup>
