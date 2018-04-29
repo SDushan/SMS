@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta name="description" content="">
-
     <meta name="author" content="">
-
     <link rel="icon" href="images/favicon.ico">
-
     <title>Medialoot Bootstrap 4 Dashboard Template</title>
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
-
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <!--newcssfiles -->
+    <link href="css/addnewstudent.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid" id="wrapper">
@@ -47,7 +45,7 @@
             <main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
                 <header class="page-header row justify-center">
                     <div class="col-md-6 col-lg-8">
-                        <h1 class="float-left text-center text-md-left">Add New User</h1>
+                        <h1 class="float-left text-center text-md-left">Add New Student</h1>
                     </div>
 
                     <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right">
@@ -74,11 +72,11 @@
                 <section class="row">
                     <div class="col-sm-12">
                         <section class="row">
-                       
+
                             <div class="col-sm-12 col-md-6">
                                 <div class="card mb-4">
                                     <div class="card-block">
-                                        <h3 class="card-title">Contact Form</h3>
+                                        <h3 class="card-title">Student Details</h3>
 
                                         <div class="dropdown card-title-btn-container">
                                             <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
@@ -96,46 +94,72 @@
                                             <fieldset>
                                                 <!-- Name input-->
                                                 <div class="form-group">
-                                                    <label class="col-12 control-label no-padding" for="name">Name</label>
+                                                    <label class="col-12 control-label no-padding" for="name">Student Name</label>
 
                                                     <div class="col-12 no-padding">
                                                         <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
                                                     </div>
                                                 </div>
 
-                                                <!-- Email input-->
+                                                <!--calander-->
                                                 <div class="form-group">
-                                                    <label class="col-12 control-label no-padding" for="email">Your E-mail</label>
-
-                                                    <div class="col-12 no-padding">
-                                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-                                                    </div>
+                                                    <!--<label class="col-12 control-label no-padding" for="email">Student Birthday</label>-->
+                                                    <label class="control-label" for="date">Student Birthday</label>
+                                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                                                   
                                                 </div>
 
-                                                <!-- Message body -->
-                                                <div class="form-group">
-                                                    <label class="col-12 control-label no-padding" for="message">Your message</label>
 
-                                                    <div class="col-12 no-padding">
-                                                        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-                                                    </div>
-                                                </div>
+                                                <!--calander biootsrap-->
 
-                                                <!-- Form actions -->
-                                                <div class="form-group">
-                                                    <div class="col-12 widget-right no-padding">
-                                                        <button type="submit" class="btn btn-primary btn-md float-right" onClick="placeOrder()">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </form>
+                                    <!--calender end-->
+                                    <!-- Email input-->
+                                    <div class="form-group">
+                                        <label class="col-12 control-label no-padding" for="email">Student E-mail</label>
+
+                                        <div class="col-12 no-padding">
+                                            <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                        </div>
                                     </div>
+                                
+                                    <!--picutrue upload-->
+                                    <div class="form-group">
+                                        <label>Student's Picture</label>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <span class="btn btn-default btn-file">
+                                                    Browse… <input type="file" id="imgInp">
+                                                </span>
+                                            </span>
+                                            <input type="text" class="form-control" readonly>
+                                        </div>
+                                        <img id='img-upload' />
+                                    </div>
+
+                                    <!-- Message body -->
+                                    <div class="form-group">
+                                        <label class="col-12 control-label no-padding" for="message">Address</label>
+
+                                        <div class="col-12 no-padding">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Please enter address here..." rows="5"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Form actions -->
+                                    <div class="form-group">
+                                        <div class="col-12 widget-right no-padding">
+                                            <button type="submit" class="btn btn-primary btn-md float-right" onClick="placeOrder()">Submit</button>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                    </form>
                                 </div>
-                              
+                                </div>
+
                             </div>
                         </section>
                         <section class="row">
-                            <div class="col-12 mt-1 mb-4">Template by <a href="https://www.medialoot.com">Medialoot</a></div>
+                           <!-- <div class="col-12 mt-1 mb-4">Template by <a href="https://www.medialoot.com">Medialoot</a></div>-->
                         </section>
                     </div>
                 </section>
@@ -146,16 +170,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>   
     <script src="dist/js/bootstrap.min.js"></script>
-
     <script src="js/chart.min.js"></script>
     <script src="js/chart-data.js"></script>
     <script src="js/easypiechart.js"></script>
     <script src="js/easypiechart-data.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/AddNewUser.js"></script>
-    
+    <script src="js/AddNewStudent.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 

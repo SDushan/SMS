@@ -77,6 +77,6 @@ C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\bin\Microsoft.Owin.Security
 C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\obj\Debug\SMS.csprojResolveAssemblyReference.cache
 C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\obj\Debug\SMS.dll
 C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\obj\Debug\SMS.pdb
+C:\Users\Venusha\Documents\GitHub\SMS\System\SMS\SMS\obj\Debug\SMS.csprojResolveAssemblyReference.cache

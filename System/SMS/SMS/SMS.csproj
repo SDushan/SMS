@@ -198,6 +198,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DB\DBConnection.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,11 +211,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AddNewStudent.html" />
     <Content Include="Content\AddNewUser.html" />
     <Content Include="Content\cards.html" />
     <Content Include="Content\charts.html" />
+    <Content Include="Content\css\addnewstudent.css" />
     <Content Include="Content\elements.html" />
     <Content Include="Content\index.html" />
+    <Content Include="Content\js\AddNewStudent.js" />
     <Content Include="Content\js\AddNewUser.js" />
     <Content Include="Content\widgets.html" />
     <Content Include="favicon.ico" />
@@ -235,7 +241,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -269,11 +277,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
     <Folder Include="Content\dist\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Content\images\" />
     <Folder Include="Content\sass\" />
+    <Folder Include="Views\Student\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
